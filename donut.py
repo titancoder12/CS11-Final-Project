@@ -116,7 +116,6 @@ def question():
             # Display message
             aprint("Incorrect. Try again!")
         
-
 # Asks user for a choice given a prompt and possible choices and ensures that the choice is valid. Returns the choice.
 def ask_choice(prompt, options):
 
@@ -139,7 +138,6 @@ def ask_choice(prompt, options):
 
     # Return choice of user
     return choice 
-
 
 # Ends the game, either with a win or loss. Asks user if they would like to play again.
 def end(won):
@@ -175,7 +173,6 @@ def end(won):
         aprint("Goodbye!")
 
         exit()
-
 
 # Displays the math scores using the variables defined at the top of the file.
 def display_scores():
