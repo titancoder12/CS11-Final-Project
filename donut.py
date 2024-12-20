@@ -134,7 +134,9 @@ def ask_choice(prompt, options):
             # Display message if choice is invalid
             aprint("Invalid choice.")
             aprint()
-            choice = input(prompt_and_options)
+            
+            # BUG, fixed this Friday Dec 20, 2024
+            #choice = input(prompt_and_options)
 
     # Return choice of user
     return choice 
@@ -246,8 +248,8 @@ def intro():
     question()
 
     # Get user choice, redirect to next function based on choice
-    choice = ask_choice("Were do you go?/What do you do?", ["house", "tree", "river", "mountain", "eat donut"])
-    if choice == "eat donut":
+    choice = ask_choice("Were do you go?/What do you do?", ["house", "tree", "river", "mountain", "donut"])
+    if choice == "donut":
         # Redirect to eat donut
         eat_donut()
     elif choice == "tree":
